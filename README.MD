@@ -29,7 +29,7 @@ Github: https://github.com/Suvink/volunteer-me
 <br><br>
 
 <b>Twilio API keys:</b><br>
-Head over to Twilio.com and create an account. Follow <a href="https://www.twilio.com/docs/whatsapp/api">this</a> tutorial and get Twilio account SID and an API token.
+Head over to Twilio.com and create an account. Follow <a href="https://www.twilio.com/docs/sms/tutorials/how-to-send-sms-messages">this</a> tutorial and get Twilio account SID and an API token.
 <br><br>
 
 <b>Adding account SID and API token to Firebase</b>
