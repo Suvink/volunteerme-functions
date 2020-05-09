@@ -1,12 +1,13 @@
-const functions = require('firebase-functions')
+//keys
 const accountSid = functions.config().twilio.sid
 const authToken = functions.config().twilio.key
 const fromNo = functions.config().twilio.from
 const messagingSid = functions.config().twilio.msid
+
+const functions = require('firebase-functions')
 const client = require('twilio')(accountSid, authToken)
 const cors = require('cors')({ origin: true })
-//const sgMail = require('@sendgrid/mail')
-//sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+
 
 exports.sendWhatsapp = functions.https.onRequest((req, res) => {
   cors(req, res, () => {
@@ -15,7 +16,7 @@ exports.sendWhatsapp = functions.https.onRequest((req, res) => {
         message: 'Not Allowed'
       })
     } else {
-      //Send whatsapp message
+      //Send text message
       client.messages 
       .create({ 
           body: req.body.message, 
@@ -32,15 +33,6 @@ exports.sendWhatsapp = functions.https.onRequest((req, res) => {
         .catch(error => {
           console.log(error)
         })
-        //Send Email
-        // const msg = {
-        //   to: 'test@example.com',
-        //   from: 'test@example.com',
-        //   subject: 'Sending with Twilio SendGrid is Fun',
-        //   text: 'and easy to do anywhere, even with Node.js',
-        //   html: 'and easy to do anywhere, even with Node.js',
-        // };
-        // sgMail.send(msg);
     }
   })
 })
