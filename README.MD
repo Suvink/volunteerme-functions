@@ -81,16 +81,18 @@ npm install && firebase emulators:start --only functions
 ```
 <br>
 
-### <b>Step 6: Deploying Functions</b>
+### <b>Step 5: Deploying Functions</b>
 ```
 npm install && firebase deploy
 ```
+<br>
 
 ### <b>Step 6: Linking into frontend</b>
 After deploying into firebase it will give you a link to your Firebase function. Grab the link and put it in your `.env` file in the frontend source code as `VUE_APP_BACKENDURL`
 
 That's It!
 
+<br>
 
 ## Licence
 [MIT](http://www.opensource.org/licenses/mit-license.html)
