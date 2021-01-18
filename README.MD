@@ -23,8 +23,8 @@ Sri Lanka is one of the best places to volunteer in the world. In fact Sri Lanka
 But finding a project to volunteer is not so easy. Mainly because different hosts publish their projects on their own websites and facebook pages and they are scattered everywhere. VolunteerME is a common place to list down all the volunteering opportunities in Sri Lanka so that anyone can easily find and work in projects. 
 
 
-## Demo Link
- Demo Link: https://services.suvink.me/volunteer-me
+## Platform Link
+ Platform Link: https://www.volunteerme.lk
 
 
 ## Frontend Source Code
